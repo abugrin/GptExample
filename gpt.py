@@ -13,11 +13,6 @@ model = ml.models.completions('yandexgpt').langchain(model_type="chat", timeout=
 
 langchain = []
 
-
-@yb.add_handler(command='/debug')
-def show_handlers(update: Update):
-    yb.list_handlers()
-
 @yb.add_handler(command='/clear')
 def clear_context(update: Update):
     global langchain
