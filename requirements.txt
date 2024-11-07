@@ -1,4 +1,4 @@
 python-dotenv>=1.0.1
 yambot-client>=0.0.5
-yandex_cloud_ml_sdk>=0.1.0
-langchain-core==0.2.41
+yandex_cloud_ml_sdk>=0.1.2
+langchain-core>=0.3.15

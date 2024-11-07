@@ -7,7 +7,7 @@ from yandex_cloud_ml_sdk import YCloudML
 from langchain_core.messages import AIMessage, HumanMessage
 
 load_dotenv()
-yb = MessengerBot(os.getenv('BOT_KEY'), log_level=logging.INFO)
+yb = MessengerBot(os.getenv('BOT_KEY'), log_level=logging.DEBUG)
 ml = YCloudML(folder_id=os.getenv('GPT_FOLDER'), auth=os.getenv('GPT_API_KEY'))
 model = ml.models.completions('yandexgpt').langchain(model_type="chat", timeout=60)
 
